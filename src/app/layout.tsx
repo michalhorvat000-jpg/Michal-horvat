@@ -1,23 +1,26 @@
-// src/app/page.tsx
-export default function Home() {
+import "./globals.css";
+import { ReactNode } from "react";
+
+export const metadata = {
+  title: "M-VILA 🚀",
+  description: "Oficiální web M-VILA projektu",
+};
+
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-black text-white p-6">
-      <h1 className="text-5xl font-bold mb-6">🚀 Vítej v M-VILA</h1>
-      <p className="text-lg text-gray-300 max-w-xl text-center mb-8">
-        Oficiální stránka projektu M-VILA. Připoj se k naší hře a objevuj nové
-        výzvy, levely a odměny. Tohle je jen začátek…
-      </p>
+    <html lang="cs">
+      <head />
+      <body className="bg-gray-900 text-white">
+        <header className="p-4 bg-gray-800 shadow-md">
+          <h1 className="text-xl font-bold">M-VILA 🚀</h1>
+        </header>
 
-      <a
-        href="#"
-        className="px-6 py-3 rounded-xl bg-pink-600 hover:bg-pink-700 transition text-lg font-semibold"
-      >
-        Začni hrát
-      </a>
+        <main className="p-6">{children}</main>
 
-      <footer className="mt-16 text-gray-500 text-sm">
-        © {new Date().getFullYear()} M-VILA Team
-      </footer>
-    </main>
+        <footer className="p-4 bg-gray-800 text-center text-sm">
+          © {new Date().getFullYear()} M-VILA Team
+        </footer>
+      </body>
+    </html>
   );
 }
