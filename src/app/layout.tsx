@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <h1 className="text-xl font-bold">M-VILA 🚀</h1>
         </header>
 
-        {/* TADY SE VYKRESLÍ PAGE.TSX */}
+        {/* Tady se vykreslí obsah z page.tsx */}
         <main className="p-6">{children}</main>
 
         <footer className="p-4 bg-gray-800 text-center text-sm text-gray-400">
