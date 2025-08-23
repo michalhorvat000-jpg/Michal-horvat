@@ -5,10 +5,10 @@ export default function Home() {
       <h1 className="text-5xl font-bold mb-6">M-VILA GAME</h1>
 
       {/* Subtitle */}
-      <p className="text-lg mb-8 text-center max-w-xl">
-        Enter the world’s most luxurious survival challenge. <br />
+      <p className="text-lg mb-4">
+        Enter the world’s most luxurious digital villa. <br />
         Weekly puzzles, traps and secret quests. <br />
-        Only the smartest and bravest will win. 
+        Only the smartest and bravest will survive.
       </p>
 
       {/* Call to Action */}
@@ -18,11 +18,6 @@ export default function Home() {
       >
         Join the Game
       </a>
-
-      {/* Contact */}
-      <p className="mt-10 text-sm text-gray-400">
-        Contact: mvilagamedeluxe@gmail.com
-      </p>
     </main>
-  )
+  );
 }
