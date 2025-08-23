@@ -1,23 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root { --radius: 1.25rem; }
-html, body { scroll-behavior: smooth; }
-body { background: #000; color: #e5e7eb; }
-
-.card {
-  @apply border border-zinc-800/80 rounded-2xl bg-zinc-950/70 backdrop-blur-sm;
-}
-.btn {
-  @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold transition;
-}
-.btn-primary {
-  @apply bg-cyan-500 hover:bg-cyan-400 text-black shadow-glow;
-}
-.btn-secondary {
-  @apply bg-zinc-800 hover:bg-zinc-700 text-zinc-100;
-}
-.input {
-  @apply w-full rounded-xl bg-zinc-900 border border-zinc-800 px-4 py-3 outline-none focus:border-cyan-500;
-}
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <rect width="200" height="60" fill="black" rx="10" />
+  <text x="50%" y="50%" font-size="20" font-family="Verdana" fill="white" text-anchor="middle" dominant-baseline="middle">
+    M-VILA
+  </text>
+</svg>
