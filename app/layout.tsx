@@ -1,7 +1,16 @@
-export default function Home() {
+export const metadata = {
+  title: "M-VILA 🚀",
+  description: "Herní vila v Next.js",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-4xl font-bold">Homepage funguje 🚀</h1>
-    </main>
+    <html lang="cs">
+      <body>{children}</body>
+    </html>
   );
 }
