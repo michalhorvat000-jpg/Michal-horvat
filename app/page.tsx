@@ -1,10 +1,18 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="text-4xl font-bold text-purple-500">M-VILA 🚀</h1>
-      <p className="mt-4 text-lg text-gray-300">
-        Pokud tohle vidíš, web už konečně běží! 🎉
+    <div className="text-center">
+      <h1 className="text-4xl font-bold mb-4">
+        Vítej v <span className="text-indigo-400">M-VILA 🚀</span>
+      </h1>
+      <p className="mb-6 text-lg">
+        Tohle je homepage. Pokud tohle vidíš, náš web funguje a můžeš začít stavět svou vilu 🏠
       </p>
-    </main>
+      <a
+        href="/hra"
+        className="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 rounded-lg text-white font-semibold transition"
+      >
+        Začít hru 🎮
+      </a>
+    </div>
   );
 }
